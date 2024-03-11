@@ -1,0 +1,10 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE amigos ( codigo char(5) primary key, nombre varchar(50), email varchar(60), anyo numeric(4), codciudad char(3));
+INSERT INTO amigos VALUES('D','David','mongo@gmial.com',1992,'A');
+INSERT INTO amigos VALUES('d','David',NULL,NULL,'B');
+INSERT INTO amigos VALUES('M','Mongo',NULL,NULL,'A');
+INSERT INTO amigos VALUES('DA','David','david@gmail.com',1988,'A');
+INSERT INTO amigos VALUES('du','Dulcinea',NULL,1990,'A');
+INSERT INTO amigos VALUES('de','Manuel',NULL,NULL,'A');
+COMMIT;
